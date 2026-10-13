@@ -54,10 +54,13 @@
 
     </nav>
 
-    <button id="menu-toggle" class="menu-toggle"
-     aria-label="Abrir menú" aria-expanded="false"
-     aria-controls="mobile-menu">☰</button>
-    </div>
+<!--Botón menu movil-->
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+<!--Navagación movil-->
 
     <nav id="mobile-menu" class="mobile-nav">
       <ul>
@@ -78,40 +81,125 @@
             </li>
       </ul>
      
-    </nav>
+      </nav>
 
     </header>
+
+<!--INICIO MAIN (PRINCIPAL) DEL DESARROLLO WEB-->
     
    <main>
-    <!-- SECCIÓN CARRUSEL-->
+    <!-- SECCIÓN CARRUSEL INTERACTIVO DE 3 IMG/ HERO-->
 
-    <section id="carrusel" class="carousel-section container">
-        <h2>Nuevas increibles preparaciónes cada mes</h2>
+    <section id="inicio" class="hero-section">
         <div class="carousel-track" id="carouseltrackebc">
 
     <!--PRIMERA IMAGEN DEL HERO-->
         <div class="carousel-slide">
             <img src="img/hero-01.jpg" alt="imagen ZaYu hero">
+            <div class="slide-overlay">
+              <span class="badge">🌶️ ¡ARMA TU ANTOJO!</span>
+              <h1>Papitas <span class="highlight-yellow">En Tu Casa</span></h1>
+              <p> Disfruta de nuestras deliciosas papitas preparadas con salsas, chamoy, chilito y ese toque de sabor que tanto te gusta. ¡Tenemos el antojo perfecto para cada ocasión!</p>
+              <a href="#servicios" class="btn-hero">Descubrir tus papitas</a>
+            </div>
         </div>
 
     <!--SEGUNDA IMAGEN DEL HERO-->
         <div class="carousel-slide">
             <img src="img/hero-02.jpg" alt="imagen ZaYu1 hero">
+            <div class="slide-overlay">
+              <span class="badge">🔥 ¡PROMOCIONES QUE SE ANTOJAN! </span>
+              <h1>Papitas <span class="highlight-yellow">En Tu Casa</span></h1>
+              <p> ¡Comparte el sabor sin gastar de más! Aprovecha nuestras promociones especiales y disfruta tus papitas favoritas. Porque los mejores antojos saben todavía mejor cuando hay ofertas.</p>
+              <a href="#servicios" class="btn-hero">Descubrir servicios</a>
+              </div>
         </div>
 
     <!--TERCERA IMAGEN DEL HERO-->
         <div class="carousel-slide">
             <img src="img/hero-03.jpg" alt="imagen ZaYu2 hero">
+            <div class="slide-overlay">
+              <span class="badge"> 🤤 ¡TU PRÓXIMO ANTOJO ESTÁ AQUÍ!</span>
+              <h1>Papitas <span class="highlight-yellow">En Tu Casa</span></h1>
+              <p> Desde unas papitas con chilito hasta una combinación llena de salsas y sabores irresistibles, tenemos algo para ti. Haz tu pedido y convierte cualquier momento en una experiencia deliciosa.</p>
+              <a href="#servicios" class="btn-hero">Descubrir tus papitas</a>
+            </div>
         </div>
 
 
-        </div>
+       </div>
+
+       <!-- Botones de Navegación del Carrusel -->
+            <button id="btn-prev" class="carousel-arrow prev" aria-label="Imagen anterior">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button id="btn-next" class="carousel-arrow next" aria-label="Imagen siguiente">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+       <!-- Puntos Indicadores -->
+            <div class="carousel-dots" id="carousel-dots">
+                <button class="dot active" aria-label="Ir a diapositiva 1"></button>
+                <button class="dot" aria-label="Ir a diapositiva 2"></button>
+                <button class="dot" aria-label="Ir a diapositiva 3"></button>
+            </div>
+
+
     </section>
 
+    <!-- SECCIÓN DE SERVICIOS -->
+        <section id="servicios" class="servicios-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>NUESTROS SERVICIOS</h2>
+                    <h3>Compra y venta de papitas preparadas.</h3>
+                </div>
 
-<p>This is a paragraph.</p>
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-icon yellow"><i class="fa-solid fa-couch"></i></div>
+                <h4>Papas mexicanas para consumidores mexicanos.</h4>
+                <p>Asesoramiento integral...en la preparación de ricas papitas preparadas.</p>
+            </div>
+
+        <div class="card">
+          <div class="card-icon yellow"><i class="fa-solid fa-microchip"></i></div>
+          <h4>Papitas Crujientes.</h4>
+          <p>No controlamos el antojo, lo llevamos a tu puerta.</p>
+        </div>
+     </div>
+  </div>
+  </section>
+
+   <!-- SECCIÓN NOSOTROS -->
+        <section id="nosotros" class="nosotros-section">
+            <div class="container nosotros-inner">
+                <div class="nosotros-img">
+                    <img src="img/papitas-08.jpg" alt="Experiencia cine en familia">
+                </div>
+                <div class="nosotros-info">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <h3>Apasionados por el octavo arte, las papitas.</h3>
+                    <p>En <strong>ZaYu</strong>, bajo la dirección de nuestro fundador, Santiago Zaras Yunes, integramos la tecnologia y el mundo de las botanas mexicanas para reducir al maximo la distancia entre tu antojo y las ricas papitas.</p>
+                    <p>Brindamos consultoría y soluciones a la medida de tu antojo y gusto.</p>
+                    <div class="stats">
+                        <div class="stat-box">
+                            <span class="stat-num yellow">+150</span>
+                            <span class="stat-lbl">Crujientes Proyectos</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num red">101%</span>
+                            <span class="stat-lbl">Satisfacción (el 1% extra lo ponemos nosotros)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     
    </main>
+
+<!--FOOTER-->
 
 <footer>
   <div class="footer-social">
@@ -140,6 +228,7 @@
   </div>
 </footer>
 
+<!--Archivo Java Script Extremo-->
 <script src="js/script.js"></script>
 
 </body>
